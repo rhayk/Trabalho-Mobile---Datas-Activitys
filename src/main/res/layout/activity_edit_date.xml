@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDateActivity">
+
+    <Button
+        android:id="@+id/incrementaAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="440dp"
+        android:onClick="incrementaAno"
+        android:text="+ano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/incrementaDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="440dp"
+        android:onClick="incrementaDia"
+        android:text="+dia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/incrementaMes"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mesEdit"
+        android:layout_width="89dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/anoEdit"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/diaEdit"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <EditText
+        android:id="@+id/anoEdit"
+        android:layout_width="89dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <EditText
+        android:id="@+id/diaEdit"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <Button
+        android:id="@+id/incrementaMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="440dp"
+        android:onClick="incrementaMes"
+        android:text="+mes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/incrementaAno"
+        app:layout_constraintStart_toEndOf="@+id/incrementaDia" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:onClick="nextActivity"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
